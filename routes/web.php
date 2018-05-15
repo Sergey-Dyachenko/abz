@@ -19,3 +19,5 @@ Route::get('/show', function(){
    return   view('show');
 });
 
+Route::get('/getall', 'EmployerController@index');
+
