@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Employee extends Model
 {
-    public function titles()
+    public function title()
     {
         return $this->belongsTo(Title::class);
     }

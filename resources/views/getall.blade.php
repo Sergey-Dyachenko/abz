@@ -90,7 +90,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -107,7 +107,7 @@
                     Database Data:
                 </div>
 
-                <table id="customers">
+                <table id="customers" >
                     <tr>
                         <th>First Name</th>
                         <th>Last Name</th>
@@ -116,21 +116,15 @@
                     </tr>
                     @foreach($employers as $employer)
                         <tr>
+
                             <td>{{$employer->first_name}}</td>
                             <td>{{$employer->last_name}}</td>
                             <td>{{$employer->hire_date}}</td>
-                            <td>{{$employer->titles['title']}}</td>
+                            <td>{{$employer->title}}</td>
                         </tr>
                     @endforeach
 
                 </table>
-
-
-                <ul>
-
-
-
-                </ul>
 
             </div>
         </div>

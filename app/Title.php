@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Title extends Model
 {
     //
-    public function employee()
+    public function employees()
     {
-        return $this->hasMany(Employee::class);
+        return $this->hasMany(Employee::class, 'id', 'title_id');
     }
 }
