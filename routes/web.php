@@ -20,4 +20,5 @@ Route::get('/show', function(){
 });
 
 Route::get('/getall', 'EmployerController@index');
+Route::get('/test', 'TestController@index');
 
